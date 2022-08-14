@@ -1,7 +1,9 @@
 const mainContainer = document.getElementById("main-container");
 
-function addCategory(category, exercise, name) {
+function addCategory(category, exercise, name, args) {
   let categoryElement = document.getElementById(category);
+
+  if (!args) args = [];
 
   if (!categoryElement) {
     categoryElement = document.createElement("div");
@@ -11,11 +13,13 @@ function addCategory(category, exercise, name) {
 
   let btn = document.createElement("button");
   btn.innerHTML = name;
-  let callback = () => ShowIsCorrect(exercise.execute(exercise.initialForm), exercise.expectedForm);
+  let callback = () => ShowIsCorrect(exercise.execute(exercise.initialForm, ...args), exercise.expectedForm);
   btn.addEventListener("click", callback);
   categoryElement.appendChild(btn);
 }
 
 var categories = {
-  conversion: "conversion",
+  conversion_easy: "conversion_easy",
+  conversion_medium: "conversion_medium",
+  conversion_hard: "conversion_hard",
 };

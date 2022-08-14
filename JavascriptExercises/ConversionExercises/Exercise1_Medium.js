@@ -1,4 +1,4 @@
-const exercise2 = {
+const exercise1_medium = {
   initialForm: [
     {
       name: "A",
@@ -38,4 +38,4 @@ const exercise2 = {
   },
 };
 
-addCategory(categories.conversion, exercise2, "Exercise 1 Medium");
+addCategory(categories.conversion_medium, exercise1_medium, "Exercise 1 Medium");

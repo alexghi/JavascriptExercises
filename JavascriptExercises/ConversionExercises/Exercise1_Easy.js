@@ -44,4 +44,4 @@ const exercise1_easy = {
   },
 };
 
-addCategory(categories.conversion, exercise1_easy, "Exercise 1 Easy");
+addCategory(categories.conversion_easy, exercise1_easy, "Exercise 1 Easy");

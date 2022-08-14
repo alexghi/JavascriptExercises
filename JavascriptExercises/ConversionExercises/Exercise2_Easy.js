@@ -71,4 +71,4 @@ const exercise2_easy = {
   },
 };
 
-addCategory(categories.conversion, exercise2_easy, "Exercise 2 Easy");
+addCategory(categories.conversion_easy, exercise2_easy, "Exercise 2 Easy");
