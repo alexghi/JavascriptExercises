@@ -1,11 +1,12 @@
-function ShowIsCorrect(actual, expected) {
-  const isCorrect = JSON.stringify(actual) === JSON.stringify(expected);
-  console.clear();
+function ShowIsCorrect(actual, execise) {
+  const isCorrect = JSON.stringify(actual) === JSON.stringify(execise.expectedForm);
   if (isCorrect) {
     console.log("Correct");
   } else {
+    console.log("Initial");
+    console.log(execise.initialForm);
     console.log("Expected");
-    console.log(expected);
+    console.log(execise.expectedForm);
     console.log("Actual");
     console.log(actual);
   }

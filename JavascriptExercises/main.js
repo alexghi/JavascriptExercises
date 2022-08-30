@@ -13,7 +13,10 @@ function addCategory(category, exercise, name, args) {
 
   let btn = document.createElement("button");
   btn.innerHTML = name;
-  let callback = () => ShowIsCorrect(exercise.execute(exercise.initialForm, ...args), exercise.expectedForm);
+  let callback = () => {
+    console.clear();
+    ShowIsCorrect(exercise.execute(exercise.initialForm, ...args), exercise);
+  };
   btn.addEventListener("click", callback);
   categoryElement.appendChild(btn);
 }

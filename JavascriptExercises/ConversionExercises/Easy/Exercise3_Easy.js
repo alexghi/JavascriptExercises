@@ -1,3 +1,4 @@
+//Transform the 2D array into an 1D array
 const exercise3_easy = {
   initialForm: [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9, 10], [11]],
   expectedForm: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],

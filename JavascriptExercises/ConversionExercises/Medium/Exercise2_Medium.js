@@ -1,3 +1,4 @@
+//Convert from an 1D array to a matrix. The inner array length must be max 3
 const exercise2_medium = {
   initialForm: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   expectedForm: [
